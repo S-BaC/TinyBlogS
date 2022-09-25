@@ -63,3 +63,43 @@ h1 {
 	background-color: #eee;
 	text-align:center;
 }
+
+form {
+	display:flex;
+	flex-direction:column;
+	margin:auto;
+	max-width: 300px;
+	gap:3vh;
+}
+
+form h3 {
+	text-align:center;
+}
+
+form div {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	gap:2vw;
+	align-content:center;
+}
+
+label{
+	text-align:center;
+}
+
+input {
+	height:5vh;
+	border:none;
+	background-color: #ffe0b3;
+}
+
+
+.submitInput{
+	height:30px;
+	max-width:100px;
+	margin-left:auto;
+	background-color: #ffe0b3;
+	text-align:center;
+	border:none;
+	cursor:pointer;
+}

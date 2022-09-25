@@ -22,8 +22,8 @@
 		<div>
 			<p style="font-size:1.5rem; font-weight:600;">${user.name}</p>
 			<p style="margin-bottom:15vh;">${user.title}</p>
-			<a>Edit Profile</a>
-			<a>Add Blogs</a>
+			<a href="/TinyBlogS/formReq?form=editProfile&userID=${ user.id }">Edit Profile</a>
+			<a href="/TinyBlogS/formReq?form=addBlog&userID=${ user.id }">Add Blog</a>
 		</div>
 		<img src="images/${ user.img }" alt="Profile Image"/>
 	</div>
@@ -33,8 +33,8 @@
 			<div class="blogTop">
 				<h1>${blog.title}</h1>
 				<div>
-					<a>edit</a>
-					<a>delete</a>
+					<a href="/TinyBlogS/formReq?form=editBlog&blogID=${ blog.id }">edit</a>
+					<a href="/TinyBlogS/formReq?form=deleteBlog&blogID=${ blog.id }">delete</a>
 				</div>
 			</div>
 			<div style="display:flex; width:100%; justify-content:space-between; align-items:center;">
